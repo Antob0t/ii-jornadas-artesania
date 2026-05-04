@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Antob0t/ii-jorndas-artesania.git"
+    "url": "https://github.com/Antob0t/ii-jornadas-artesania.git"
   },
   "author": {
     "name": "Antolín Murcia Navarro",
@@ -32,9 +32,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Antob0t/ii-jorndas-artesania/issues"
+    "url": "https://github.com/Antob0t/ii-jornadas-artesania/issues"
   },
-  "homepage": "https://github.com/Antob0t/ii-jorndas-artesania#readme",
+  "homepage": "https://github.com/Antob0t/ii-jornadas-artesania#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.3",
     "autoprefixer": "^10.4.24",
