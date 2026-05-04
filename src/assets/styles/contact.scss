@@ -1,0 +1,140 @@
+
+.contacto {
+  min-height: 100dvh; 
+  container-type: inline-size;
+  background-color: $background-oklch;
+  padding: 4rem 1rem;
+  max-width: 80vw; 
+  margin: 0 auto;
+  margin-bottom: 10vh;
+  font-family: $font-family;
+  @include respond-to(desktop) {
+    max-width: 70vw;
+  }
+
+  &__titulo {
+    font-family: $font-special;
+    font-size: clamp(2rem, 8cqw, 6rem); 
+    color: $primary-oklch;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 0 $secondary-oklch;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__texto {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    opacity: 0.9;
+  }
+
+  &__formulario {
+    background-color: $white-oklch;
+    padding: 3rem 2rem;
+    border: 4px solid $primary-oklch; 
+    box-shadow: 15px 15px 0 $secondary-oklch; 
+    margin-bottom: 4rem;
+
+    @include respond-to(desktop) {
+      padding: 4rem; 
+    }
+  }
+
+  &__label.form-label {
+    font-family: $font-special;
+    font-size: 1.2rem;
+    color: $primary-oklch;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem; 
+  }
+
+  &__input.form-control,
+  &__textarea.form-control {
+    font-family: $font-family;
+    font-size: 1rem;
+    color: $primary-oklch;
+    background-color: $white-oklch; 
+    border: 4px solid $primary-oklch; 
+    border-radius: 0;
+    padding: 1rem;
+    transition: all 0.3s ease;
+
+    &:focus {
+      outline: none;
+      background-color: $white-oklch; 
+      box-shadow: 8px 8px 0 $secondary-oklch; 
+      border-color: $primary-oklch;
+      transform: translate(-4px, -4px); 
+    }
+  }
+
+  &__textarea.form-control {
+    resize: vertical; 
+    min-height: 150px;
+  }
+
+  &__boton.btn.btn-primary {
+    display: block;
+    width: 100%;
+    font-family: $font-special;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    color: $primary-oklch;
+    background-color: $secondary-oklch;
+    border: 4px solid $primary-oklch;
+    border-radius: 0;
+    box-shadow: 6px 6px 0 $primary-oklch;
+    transition: all 0.2s ease;
+    margin-top: 1rem;
+
+    @include respond-to(desktop) {
+      width: auto;
+    }
+
+    &:hover, 
+    &:focus,
+    &:active {
+      transform: translate(6px, 6px);
+      box-shadow: 0 0 0 transparent; 
+      background-color: $primary-oklch; 
+      color: $secondary-oklch;
+      border-color: $primary-oklch; 
+    }
+  }
+
+  &__redes {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  &__red {
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: $font-special;
+      font-size: 1.2rem;
+      color: $background-oklch;
+      background-color: $primary-oklch;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border: 4px solid $primary-oklch;
+      box-shadow: 6px 6px 0 $secondary-oklch;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $secondary-oklch;
+        color: $primary-oklch;
+        transform: translateY(-5px);
+        box-shadow: 10px 10px 0 $primary-oklch;
+      }
+    }
+  }
+}

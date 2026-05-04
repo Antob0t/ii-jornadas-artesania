@@ -1,15 +1,16 @@
 {
-  "name": "uoc-boilerplate",
-  "version": "3.13.0",
+  "name": "jorndas de artesania",
+  "version": "1.0.0",
   "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "Proyecto de maquetación web Frontend (PEC 2) para las II Jornadas de Artesanía. Desarrollado con HTML5, SCSS (metodología BEM), CSS Grid avanzado, Flexbox, integración personalizada de Bootstrap 5 y funciones modernas de CSS (:has, :is, oklch, Container Queries)",
   "scripts": {
     "parcel:serve": "parcel -p 8123 --target web",
     "parcel:build": "parcel build --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean parcel:build",
-    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
+    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
+    "lint:css": "stylelint \"src/assets/styles/**/*.scss\""
   },
   "targets": {
     "web": {
@@ -23,17 +24,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
+    "url": "https://github.com/Antob0t/ii-jorndas-artesania.git"
   },
   "author": {
-    "name": "Jordi Tarrida",
-    "email": "jorditarrida@uoc.edu"
+    "name": "Antolín Murcia Navarro",
+    "email": "amurciana@uoc.edu"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
+    "url": "https://github.com/Antob0t/ii-jorndas-artesania/issues"
   },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://github.com/Antob0t/ii-jorndas-artesania#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.3",
     "autoprefixer": "^10.4.24",
@@ -42,6 +43,13 @@
     "postcss-preset-env": "^11.1.2",
     "posthtml-include": "^2.0.1",
     "rimraf": "^6.1.2",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "stylelint": "^17.9.1",
+    "stylelint-config-standard-scss": "^17.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.2.0",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8"
   }
 }

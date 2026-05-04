@@ -1,0 +1,268 @@
+.poster {
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  background-color: $background;
+  gap: 2rem;
+  padding: 1rem;
+
+  @supports (display: grid) {
+    @include respond-to(desktop) {
+      display: grid;
+      max-width: 1400px;
+      margin: 3rem auto;
+      padding: 0;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto 100px auto 100px auto auto;
+      gap: 0;
+
+      &__header { 
+        grid-area: 1 / 1 / 2 / 13; 
+        border-bottom: 4px solid $primary;
+      }
+      
+      &__figure { 
+        grid-area: 2 / 1 / 5 / 9; 
+        border-right: 4px solid $primary; 
+        border-bottom: 4px solid $primary;
+        z-index: 1;
+      }
+
+      &__titulo { 
+        grid-area: 3 / 7 / 4 / 13; 
+        z-index: 10;
+        margin-top: 2rem;
+        margin-right: -4px;
+      }
+
+      &__fecha { 
+        grid-area: 4 / 8 / 6 / 13; 
+        z-index: 15;
+      }
+
+      .calendario { 
+        grid-area: 5 / 1 / 6 / 8; 
+        border-right: 4px solid $primary;
+      }
+
+      &__patrocinadores { 
+        grid-area: 6 / 1 / 7 / 13; 
+        border-top: 4px solid $primary;
+      }
+    }
+  }
+  &__header {
+    background-color: $primary;
+    color: $background;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-family;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.75rem;
+  }
+
+  &__figure { 
+    margin: 0; 
+    overflow: hidden; 
+    background: #000; 
+  }
+  
+  img.poster__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.8s ease;
+    &:hover { 
+      filter: grayscale(0%); 
+      opacity: 1; 
+      transform: scale(1.05); 
+    }
+  }
+
+  &__titulo {
+    background-color: $primary;
+    color: $background;
+    margin-bottom: 50px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 20px 20px 0 $secondary;
+    z-index: 10;
+
+    @include respond-to(desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__h1 {
+    font-family: $font-special;
+    max-width: 100%;
+    word-break: break-word;
+    hyphens: auto;
+    font-size: clamp(2rem, 10cqi, 4.5rem);
+    line-height: 0.85;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  p.poster__image {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    line-height: 1.6;
+    border-left: 4px solid $secondary;
+    padding-left: 1.5rem;
+  }
+
+  &__fecha {
+    background-color: $secondary;
+    color: $primary;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-title;
+    text-align: center;
+    box-shadow: -15px 15px 0 $primary;
+    @include respond-to(desktop) {
+       box-shadow: none;
+    }
+  }
+
+  &__reserva { 
+    text-transform: uppercase; 
+    font-size: 0.7rem; 
+    border-bottom: 2px solid $primary; 
+  }
+  
+  &__dias { 
+    font-family: $font-special;
+    font-size: 3rem; 
+    font-weight: 900; 
+    margin: 0.5rem 0; 
+  }
+  
+  &__mes { 
+    font-size: 1.5rem; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+  }
+
+  &__patrocinadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: $background;
+
+    @include respond-to(desktop) {
+      gap: 4rem;
+      padding: 4rem;
+    }
+  }
+
+  &__patrocinador--logo {
+    height: 40px;
+    filter: grayscale(1);
+    opacity: 0.3;
+    transition: 0.3s;
+    
+    @include respond-to(desktop) {
+      height: 80px;
+    }
+    
+    &:hover { 
+      opacity: 1; 
+      filter: grayscale(0); 
+    }
+  }
+  .calendario {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: $background;
+
+    @include respond-to(tablet) { 
+      grid-template-columns: 1fr 1fr; 
+    }
+
+    &__col {
+      padding: 3rem;
+      border-bottom: 2px solid rgba(0,0,0,0.1);
+      
+      @include respond-to(tablet) { 
+        border-bottom: 0;
+        &:first-child { 
+          border-right: 2px solid rgba(0,0,0,0.1); 
+        }
+      }
+    }
+
+    &__titulo {
+      font-family: $font-special;
+      color: $secondary;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      z-index: 100;
+    }
+
+    &__fecha {
+      font-family: $font-family;
+      font-weight: bold;
+      opacity: 0.3;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 2rem;
+    }
+
+    &__actividades {
+      list-style: none;
+      padding: 0;
+    }
+    
+    &__hora {
+      font-weight: 700;
+      font-size: 0.7rem;
+      color: $primary;
+      opacity: 0.5;
+      margin-top: 1.5rem;
+      
+      &:first-child { 
+        margin-top: 0; 
+      }
+    }
+
+    &__actividad {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba($secondary, 0.2);
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+
+      &--artista {
+        color: $secondary;
+        display: block;
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+@container (min-width: 992px) {
+  .poster__h1 {
+    font-size: 7cqi;
+    box-shadow: 0;
+  }
+  .poster__titulo {
+    padding: 4rem;
+    z-index: 20;
+  }
+}

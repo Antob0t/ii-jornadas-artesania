@@ -6,14 +6,21 @@
 /**
  * Import dependencies
  */
-@use "dependencies";
+@import "dependencies";
+@import "variables";
 
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
 
-@use "layouts/home";
+
+@import "./index";
+@import "./contact";
+@import "./article";
+@import "./speakers";
+@import "./layouts/footer";
+@import "./layouts/nav";
 
 /**
  * Do NOT include anything else in this file!

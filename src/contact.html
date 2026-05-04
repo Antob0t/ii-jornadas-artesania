@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"/>
+    <title>Contacto | II Jornadas de Artesania</title>
+    <meta name="description" content="II Jornadas de Artesania en Alcalá del Jucar, Albacete.">
+    <meta name="keywords" content="jornadas, artesania, alcala del jucar, albacete, medieval, mercado, medieval, feria, mercadillo, artesano, artesanos">
+    <meta name="author" content="Antolín Murcia Navarro">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <include src="./views/nav.html"></include>
+    <main class="contacto">
+        <h1 class="contacto__titulo">Contacto</h1>
+        <p class="contacto__texto">Si deseas ponerte en contacto con nosotros para obtener más información sobre las II Jornadas de Artesania, tienes alguna pregunta o quieres colaborar con el evento, no dudes en enviarnos un mensaje a través del siguiente formulario de contacto:</p>
+        
+        <form class="contacto__formulario" action="#" method="post" netlify>
+            <div class="mb-3">
+                <label for="nombre" class="form-label contacto__label">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control contacto__input" placeholder="Tu nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label contacto__label">Correo electrónico:</label>
+                <input type="email" id="email" name="email" class="form-control contacto__input" placeholder="nombre@ejemplo.com"  required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label contacto__label">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" class="form-control contacto__textarea" rows="5" placeholder="Tu mensaje..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary contacto__boton">Enviar</button>
+        </form>
+
+        <p class="contacto__texto">También puedes contactarnos a través de nuestras redes sociales:</p>
+        <ul class="contacto__redes">
+            <li class="contacto__red"><a href="https://www.facebook.com/sandosushi" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+            <li class="contacto__red"><a href="https://www.instagram.com/sandosushi" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li class="contacto__red"><a href="https://www.twitter.com/sandosushi" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+        </ul>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

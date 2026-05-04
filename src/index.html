@@ -1,36 +1,81 @@
 <!doctype html>
-
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-    <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"/>
+    <title>II Jornadas de Artesania | Alcalá del Jucar</title>
+    <meta name="description" content="II Jornadas de Artesania en Alcalá del Jucar, Albacete.">
+    <meta name="keywords" content="jornadas, artesania, alcala del jucar, albacete, medieval, mercado, medieval, feria, mercadillo, artesano, artesanos">
+    <meta name="author" content="Antolín Murcia Navarro">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
-        <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
-        />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
+    <include src="views/nav.html"></include>
+    <main class="poster">
+      <div class="poster__header">
+        <p class="poster__lugar">Alcalá del Jucar // Albacete</p>
+        <p class="poster__año">2026</p>
+      </div>
+      <figure class="poster__figure">
+        <img class="poster__image" src="/src/assets/images/portada.jpg" alt="Imagen de artesanía local"/>
+      </figure>
+      <div class="poster__titulo">
+        <h1 class="poster__h1">II Jornadas de Artesania</h1>
+        <p class="poster__image">Un evento dedicado a la celebración y promoción de las tradiciones artesanales, con una amplia programación de actividades, talleres y conferencias que ofrecen una visión completa del mundo de la artesanía.</p>
+      </div>
+      <div class="poster__fecha">
+        <p class="poster__reserva">Reserva la fecha</p>
+        <p class="poster__dias">12 - 13</p>
+        <p class="poster__mes">Julio</p>
+      </div>
+      <section class="calendario">
+        <div class="calendario__col">
+          <h3 class="calendario__titulo">Jueves</h3>
+          <p class="calendario__fecha">12 de julio</p>
+          <ul class="calendario__actividades">
+                <li class="calendario__hora">09:00 - 14:00</li>
+                <li class="calendario__actividad">Feria de artesanos</li>
+                <li class="calendario__hora">14:00 - 16:00</li>
+                <li class="calendario__actividad">Talleres de artesanía de<span class="calendario__actividad--artista"> Cris Cocina</span></li>
+                <li class="calendario__hora">16:00 - 18:00</li>
+                <li class="calendario__actividad">Exhibiciones en vivo de los artistas<span class="calendario__actividad--artista"> Beatriz Boroba</span></li>
+                <li class="calendario__hora">18:00 - 20:00</li>
+                <li class="calendario__actividad">Conferencias con<span class="calendario__actividad--artista"> Paco Gijón y Tía Paula</span></li>
+                <li class="calendario__hora">20:00 - 22:00</li>
+                <li class="calendario__actividad">Actividades para niños</li>
+            </ul>
+        </div>
+        <div class="calendario__col">
+          <h3 class="calendario__titulo">Viernes</h3>
+          <p class="calendario__fecha">13 de julio</p>
+            <ul class="calendario__actividades">
+            <li class="calendario__hora">09:00 - 14:00</li>
+            <li class="calendario__actividad">Feria de artesanos</li>
+            <li class="calendario__hora">12:00 - 14:00</li>
+            <li class="calendario__actividad">Conciertos de folclore de <span class="calendario__actividad--artista"> Grupo Las Mariás</span></li>
+            <li class="calendario__hora">14:00 - 16:00</li>
+            <li class="calendario__actividad">Charlas de alfareia con<span class="calendario__actividad--artista"> Tania Sanchéz</span></li>
+            <li class="calendario__hora">17:00 - 20:00</li>
+            <li class="calendario__actividad">Fiesta pagana con el<span class="calendario__actividad--artista"> DJ Ultratumba</span></li>
+            </ul>
+        </div>
+      </section>
+      <div class="poster__patrocinadores">
+        <figure class="poster__patrocinador">
+          <img class="poster__patrocinador--logo" src="/src/assets/images/patrocinador.png" alt="Logo del patrocinador">
+        </figure>
+        <figure class="poster__patrocinador">
+          <img class="poster__patrocinador--logo" src="/src/assets/images/patrocinador1.webp" alt="Logo del patrocinador">
+        </figure>
+        <figure class="poster__patrocinador">
+          <img class="poster__patrocinador--logo" src="/src/assets/images/patrocinador2.svg" alt="Logo del patrocinador">
+        </figure>
+      </div>
+    </main>
+    <include src="views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>
-    <!-- do not remove this line! -->
   </body>
 </html>
