@@ -1,5 +1,5 @@
 {
-  "name": "jorndas de artesania",
+  "name": "ii-jornadas-artesania",
   "version": "1.0.0",
   "private": true,
   "description": "Proyecto de maquetación web Frontend (PEC 2) para las II Jornadas de Artesanía. Desarrollado con HTML5, SCSS (metodología BEM), CSS Grid avanzado, Flexbox, integración personalizada de Bootstrap 5 y funciones modernas de CSS (:has, :is, oklch, Container Queries)",
