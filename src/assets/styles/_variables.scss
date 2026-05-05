@@ -3,17 +3,14 @@
 $primary: #020100;
 $secondary: #d67e20;
 $background: #f1f1f1;
-
-$primary-oklch: oklch(0.1176 0.0222 82.32);
-$secondary-oklch: oklch(0.7618 0.2368 82.32);
-$background-oklch: oklch(0.9581 0 0);
-$white-oklch: oklch(0.9641 0 0);
-
+$primary-oklch: oklch(11.76% 0.0222 82.32deg);
+$secondary-oklch: oklch(76.18% 0.2368 82.32deg);
+$background-oklch: oklch(95.81% 0 0deg);
+$white-oklch: oklch(96.41% 0 0deg);
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
 );
-
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
@@ -23,6 +20,7 @@ $breakpoint-xl: 1200px;
   @if $canvas == tablet {
     @media (min-width: $breakpoint-md) { @content; }
   }
+
   @if $canvas == desktop {
     @media (min-width: $breakpoint-lg) { @content; }
   }
@@ -31,9 +29,7 @@ $breakpoint-xl: 1200px;
 $font-family: 'Roboto Mono', sans-serif;
 $font-title: 'Climate Crisis', serif;
 $font-special: 'Skranji', serif;
-
 $navbar-light-color: $primary;
 $navbar-light-hover-color: $secondary;
 $navbar-light-toggler-border-color: transparent;
-
 $body-bg: $background;

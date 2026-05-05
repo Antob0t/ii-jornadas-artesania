@@ -51,6 +51,7 @@
       }
     }
   }
+
   &__header {
     background-color: $primary;
     color: $background;
@@ -62,6 +63,7 @@
     letter-spacing: 0.3em;
     font-size: 0.75rem;
   }
+
   &__año{
     font-family: $font-special;
   }
@@ -79,6 +81,7 @@
     filter: grayscale(100%);
     opacity: 0.7;
     transition: all 0.8s ease;
+
     &:hover { 
       filter: grayscale(0%); 
       opacity: 1; 
@@ -105,7 +108,7 @@
   &__h1 {
     font-family: $font-title;
     max-width: 100%;
-    word-break: break-word;
+    overflow-wrap: break-word;
     hyphens: auto;
     font-size: clamp(2rem, 10cqi, 4.5rem);
     line-height: 0.85;
@@ -133,6 +136,7 @@
     font-family: $font-title;
     text-align: center;
     box-shadow: -15px 15px 0 $primary;
+
     @include respond-to(desktop) {
        box-shadow: none;
     }
@@ -189,6 +193,7 @@
       filter: grayscale(0); 
     }
   }
+
   .calendario {
     display: grid;
     grid-template-columns: 1fr;
@@ -201,14 +206,16 @@
     &__col {
       padding: 3rem;
       border-bottom: 2px solid rgba(0,0,0,0.1);
+    }
       
       @include respond-to(tablet) { 
         border-bottom: 0;
+
         &:first-child { 
           border-right: 2px solid rgba(0,0,0,0.1); 
         }
       }
-    }
+
 
     &__titulo {
       font-family: $font-title;
@@ -266,8 +273,37 @@
     font-size: 7cqi;
     box-shadow: 0;
   }
+
   .poster__titulo {
     padding: 4rem;
     z-index: 20;
+  }
+}
+
+.breadcrumb {
+  .breadcrumb-item a {
+    color: $secondary;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+
+    &:hover, 
+    &:focus {
+      color: $primary;
+      border-bottom-color: $primary;
+    }
+  }
+
+  .breadcrumb-item.active {
+    color: $primary;
+    font-family: $font-special;
+    text-transform: uppercase;
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    color: $primary;
+    font-weight: bold;
   }
 }

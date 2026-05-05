@@ -1,27 +1,8 @@
-/**
- * Use this file to import partials.
- * Do not include SCSS code in this file.
- */
-
-/**
- * Import dependencies
- */
-@import "dependencies";
 @import "variables";
-
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
-
-
-@import "./index";
-@import "./contact";
-@import "./article";
-@import "./speakers";
-@import "./layouts/footer";
-@import "./layouts/nav";
-
-/**
- * Do NOT include anything else in this file!
- */
+@import "dependencies";
+@import "layouts/nav";
+@import "layouts/footer";
+@import "index";
+@import "speakers";
+@import "article";
+@import "contact";

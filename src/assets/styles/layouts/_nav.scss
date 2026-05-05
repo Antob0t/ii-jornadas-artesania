@@ -1,14 +1,17 @@
-
 .navegador {
   border-bottom: 3px solid $primary;
+
   &__logo{
     transition: 0.3s ease-in-out;
+
     &:hover{
       transform: scale(1.2);
     }
   }
+
   &__enlace {
     font-size: 14px;
+
     .nav-link {
       position: relative;
       font-family: $font-family;
@@ -27,12 +30,12 @@
         transition: width 0.3s;
       }
 
+      &:hover::after {
+          width: 100%;
+      }
+
       &:hover {
         color: $secondary;
-
-        &::after {
-          width: 100%;
-        }
       }
     }
   }

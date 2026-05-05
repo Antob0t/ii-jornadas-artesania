@@ -8,16 +8,24 @@
     <meta name="description" content="II Jornadas de Artesania en Alcalá del Jucar, Albacete.">
     <meta name="keywords" content="jornadas, artesania, alcala del jucar, albacete, medieval, mercado, medieval, feria, mercadillo, artesano, artesanos">
     <meta name="author" content="Antolín Murcia Navarro">
+    <link rel="icon" type="image/png" href="/src/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/images/favicon/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <include src="./views/nav.html"></include>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb p-3">
+          <li class="breadcrumb-item"><a href="/src/index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Sobre nosotros</li>
+        </ol>
+      </nav>
     <main class="articulo">
     <header class="articulo__header">
         <figure class="articulo__figure">
-        <img class="articulo__image" src="./assets/images/articulo-header.jpg" alt="Imagen representativa de las jornadas de artesania">
+        <img class="articulo__image" src="./assets/images/articulo-header.jpg?as=avif" alt="Imagen representativa de las jornadas de artesania">
         </figure>
         <div class="articulo__header-texto">
             <h1 class="articulo__titulo">Sobre las jornadas</h1>
@@ -60,7 +68,7 @@
         </div>
 
         <figure class="articulo__figure articulo__figure--secundaria">
-        <img class="articulo__image--secundaria" src="./assets/images/feria-articulo.jpg" alt="Feria de artesanía en vivo">
+        <img class="articulo__image--secundaria" src="./assets/images/feria-articulo.jpg?as=avif" alt="Feria de artesanía en vivo">
         </figure>
 
         <div class="articulo__texto-estandar">

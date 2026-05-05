@@ -1,13 +1,13 @@
-
 .contacto {
   min-height: 100dvh; 
-  container-type: inline-size;
-  background-color: $background-oklch;
-  padding: 4rem 1rem;
   max-width: 80vw; 
-  margin: 0 auto;
-  margin-bottom: 10vh;
+  margin: 0 auto 10vh;
+  padding: 4rem 1rem;
+  container-type: inline-size;
+  container-name: contact-page;
+  background-color: $background-oklch;
   font-family: $font-family;
+
   @include respond-to(desktop) {
     max-width: 70vw;
   }
@@ -63,7 +63,6 @@
 
     &:focus {
       outline: none;
-      background-color: $white-oklch; 
       box-shadow: 8px 8px 0 $secondary-oklch; 
       border-color: $primary-oklch;
       transform: translate(-4px, -4px); 
@@ -94,14 +93,11 @@
       width: auto;
     }
 
-    &:hover, 
-    &:focus,
-    &:active {
+    &:hover, &:focus {
       transform: translate(6px, 6px);
       box-shadow: 0 0 0 transparent; 
       background-color: $primary-oklch; 
       color: $secondary-oklch;
-      border-color: $primary-oklch; 
     }
   }
 

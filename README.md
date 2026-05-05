@@ -1,8 +1,8 @@
-# 🏺 II Jornadas de Artesanía - Proyecto Frontend
+#  II Jornadas de Artesanía - Proyecto Frontend
 
-Este proyecto es la resolución de la Práctica de Evaluación Continua (PEC 2) de Maquetación Web. Consiste en el desarrollo de un sitio web completo, responsive y accesible para un evento ficticio de artesanía en Alcalá del Júcar, aplicando un diseño de estilo **brutalista**.
+Este proyecto es la resolución de la Práctica de Evaluación Continua (PEC 2) de Maquetación Web. Consiste en el desarrollo de un sitio web completo, responsive y accesible para un evento ficticio de artesanía en Alcalá del Júcar.
 
-## 🚀 Características Principales y Tecnologías
+##  Características Principales y Tecnologías
 
 El proyecto ha sido construido desde cero (Mobile First) sin utilizar plantillas prefabricadas, implementando las siguientes tecnologías y metodologías:
 
@@ -11,10 +11,10 @@ El proyecto ha sido construido desde cero (Mobile First) sin utilizar plantillas
 *   **Metodología BEM:** Arquitectura de clases (Bloque, Elemento, Modificador) para un código CSS escalable y libre de colisiones.
 *   **CSS Grid Avanzado:** Creación de un póster editorial con solapamiento de elementos en un grid de 12 columnas.
 *   **Flexbox Flex-Wrap:** Sistema de retículas fluidas sin dependencias de columnas de frameworks.
-*   **Bootstrap 5:** Integración selectiva de componentes (`Navbar`, `Cards`, `Forms`, `Buttons`), sobrescribiendo sus estilos por defecto mediante especificidad CSS.
+*   **Bootstrap 5:** Integración selectiva de componentes (`Navbar`, `Cards`, `Forms`, `Buttons`, `Breadcrumbles`), sobrescribiendo sus estilos por defecto mediante especificidad CSS.
 *   **Empaquetador:** Uso de Parcel para compilar SCSS a CSS y empaquetar el proyecto.
 
-## 🌟 Requisitos de CSS Moderno Implementados
+## Requisitos de CSS Moderno Implementados
 
 Para cumplir con los requisitos avanzados de la práctica, se han aplicado las siguientes especificaciones recientes de CSS:
 
@@ -34,10 +34,3 @@ El sitio web consta de las siguientes 4 páginas:
 3.  **`article.html` (Artículo):** Página de contenido editorial con efecto *Hero Banner*, blockquotes asimétricos, y listas ordenadas `<ol>` personalizadas con CSS Counters.
 4.  **`contact.html` (Contacto):** Formulario de Bootstrap 5 totalmente customizado para encajar con el diseño brutalista, aplicando estados visuales para accesibilidad (`:focus`, `:valid`).
 
-## 🛠️ Instalación y Uso Local
-
-Para levantar este proyecto en tu máquina local, necesitas tener instalado [Node.js](https://nodejs.org/).
-
-1. Clona el repositorio:
-   ```bash
-   git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)

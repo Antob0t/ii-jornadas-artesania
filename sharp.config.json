@@ -1,0 +1,9 @@
+{
+  "avif": {
+    "quality": 50
+  },
+  "webp": {
+    "quality": 75
+  }
+
+}
