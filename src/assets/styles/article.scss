@@ -129,7 +129,6 @@
       padding-left: 1.5rem;
       border-left: 6px solid $secondary;
       
-      p { margin: 0; }
     }
 
     &__lista {
@@ -137,6 +136,7 @@
       padding: 0;
       counter-reset: brutal-counter;
       display: grid;
+      justify-content: center;
       grid-template-columns: 1fr;
       gap: 2rem;
 
@@ -163,7 +163,7 @@
       }
     }
 
-    &__item-titulo {
+    &__item--titulo {
       border: 2px solid $primary;
       padding: 1rem;
       font-family: $font-title;
@@ -173,7 +173,7 @@
       margin-bottom: 1rem;
     }
 
-    &__cita-central {
+    &__cita--central {
       margin: 4rem auto;
       padding: 3rem;
       background-color: $primary;
@@ -186,9 +186,9 @@
       box-shadow: 15px 15px 0 $secondary;
     }
 
-    &__texto-estandar {
+    &__texto--estandar {
       max-width: 700px;
-      margin: 0 auto 2rem;
+      margin: 3rem auto 2rem;
 
       &:has(.articulo__enlace) {
         padding: 2rem;

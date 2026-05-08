@@ -1,4 +1,4 @@
-@layer components {
+
   .speakers {
     padding: 4rem 2rem;
     background-color: $background;
@@ -15,7 +15,7 @@
       font-size: clamp(2rem, 7vw, 6rem);
       text-transform: uppercase;
       color: $primary;
-      margin-bottom: 3rem;
+      margin-bottom: 6rem;
       text-align: center;
       text-shadow: 5px 5px 0 $secondary;
       width: fit-content;
@@ -112,7 +112,7 @@
       align-items: center;
     }
   }
-}
+
 
 .btn.btn-primary {
   background-color: $secondary; 
