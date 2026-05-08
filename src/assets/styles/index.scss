@@ -110,7 +110,7 @@
     max-width: 100%;
     overflow-wrap: break-word;
     hyphens: auto;
-    font-size: clamp(2rem, 10cqi, 4.5rem);
+    font-size: clamp(2rem, 6cqi, 3rem);
     line-height: 0.85;
     margin: 0;
     text-transform: uppercase;
@@ -270,7 +270,7 @@
 
 @container (min-width: 992px) {
   .poster__h1 {
-    font-size: 7cqi;
+    font-size: 4cqi;
     box-shadow: 0;
   }
 
